@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Us</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+	<section class="about-section">
+		<h1>About Our Blog</h1>
+		<p class="intro">Welcome to our little corner of the internet! We share stories, knowledge, and inspiration on various topics.</p>
+
+		<div class="team">
+			<h2>Meet the Team</h2>
+			<div class="member">
+				<img src="{{ url_for('static', filename='person1.jpg') }}" alt="Team Member 1">
+				<h3>Volodymyr</h3>
+				<p>Founder & Writer</p>
+			</div>
+			<div class="member">
+				<img src="{{ url_for('static', filename='person2.jpg') }}" alt="Team Member 2">
+				<h3>Lina</h3>
+				<p>Editor & Designer</p>
+			</div>
+		</div>
+
+		<p class="thanks">Thanks for reading and supporting us!</p>
+	</section>
+</body>
+</html>

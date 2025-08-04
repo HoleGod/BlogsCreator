@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <p class="login">Please fill in this form to log in.</p>
+  <hr>
+{% endblock header %}
+
+{% block content %}
+  <div class="container">
+    <form action="{{ url_for('auth.login') }}" method="post" class="form_">
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" name="username" placeholder="Enter ur username" id="username" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" name="password" placeholder="Enter ur password" id="password" required>
+
+      <button type="submit" class="registerbtn"><span>Log In</span></button>
+      <hr>
+    </form>
+  </div>
+{% endblock content %}

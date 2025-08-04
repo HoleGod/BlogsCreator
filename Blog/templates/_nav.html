@@ -1,0 +1,19 @@
+<nav class="navbar">
+	<div class="left">
+		<a href="/">Home</a>
+		<a href="{{ url_for('other.politics') }}" class="B">Politics</a>
+		<a href="{{ url_for('other.about') }}" class="B">About</a>
+	</div>
+
+	<div class="right">
+		<ul>
+			{% if g.user %}
+				<li><a>{{ g.user.username }}</a></li>
+				<li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+			{% else %}
+				<li><a href="{{ url_for('auth.login') }}" target="_blank">Login</a></li>
+				<li><a href="{{ url_for('auth.register') }}" target="_blank">Register</a></li>
+			{% endif %}
+		</ul>
+	</div>
+</nav>
