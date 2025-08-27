@@ -1,0 +1,27 @@
+# Python cache and bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Env variables
+.env
+
+# IDE/Editor config files
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Flask static/uploads folder (user images)
+static/uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#temp
+tempCodeRunnerFile.py

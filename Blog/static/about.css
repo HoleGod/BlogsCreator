@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f7f3ef;
+	color: #333;
+}
+
+.about-section {
+	max-width: 800px;
+	margin: 60px auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.about-section h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #5a4234;
+}
+
+.about-section .intro {
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.team {
+	margin-top: 40px;
+}
+
+.team h2 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.member {
+	display: inline-block;
+	margin: 0 20px;
+	text-align: center;
+}
+
+.member img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.member h3 {
+	margin: 5px 0;
+	font-size: 20px;
+}
+
+.member p {
+	font-size: 16px;
+	color: #777;
+}
+
+.thanks {
+	margin-top: 50px;
+	font-style: italic;
+	font-size: 16px;
+	color: #555;
+}
