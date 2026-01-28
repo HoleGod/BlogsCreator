@@ -2,16 +2,11 @@ import os
 import psycopg2
 from dotenv import load_dotenv, find_dotenv
 import sqlparse 
+from .db import get_db_connection
 
 load_dotenv(find_dotenv())
 
-conn = psycopg2.connect(
-  port=5432,
-  host=os.getenv('HOST'),
-  dbname=os.getenv('DBNAME'),
-  user=os.getenv('DB_USERNAME'),
-  password=os.getenv('DB_PASSWORD')
-)
+conn = get_db_connection()
 
 cur = conn.cursor()
 
